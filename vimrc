@@ -52,12 +52,57 @@ filetype plugin indent on    " required
 
 set backspace=indent,eol,start
 
+" show line numbers
 set number
+
+" underline 
+set cursorline
 
 syntax enable
 
+" colors
+set background=dark
 colorscheme gruvbox
 let g:gruvbox_contrast_dark='hard'
+
+let g:airline_theme="dark"
+
+" better filename completion in vim command line
+set wildmode=list:longest,full
+set wildmenu
+
+" show current mode
+set showmode
+
+" show typed command
+set showcmd
+
+" no dings on error
+set noerrorbells
+set novisualbell 
+
+" where to put swp files
+set directory=~/.vim/tmp/swp//,~/.tmp//,/tmp//
+
+" don't create foo~ files
+set nobackup
+
+" give me at least 5 lines before and after cursor
+set scrolloff=5
+
+" tab settings
+set expandtab
+set shiftwidth=4
+set tabstop=4
+set softtabstop=4
+set smarttab
+set ttyfast  " we have a fast terminal
+
+set autoindent
+
+" make lowercase search case insensitive
+set ignorecase
+set smartcase
 
 
 
