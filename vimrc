@@ -29,11 +29,15 @@ Plugin 'git://git.wincent.com/command-t.git'
 " different version somewhere else.
 " Plugin 'ascenator/L9', {'name': 'newL9'}
 
-Plugin 'scrooloose/nerdtree'
+Plugin 'scrooloose/nerdtree'             " file tree 
+Plugin 'scrooloose/nerdcommenter'        " easy commenting
 
-Plugin 'vim-airline/vim-airline'
+Plugin 'vim-airline/vim-airline'         " pretty footer 
 Plugin 'vim-airline/vim-airline-themes'
 
+Plugin 'terryma/vim-multiple-cursors'    " multiple selection/cursors
+
+Plugin 'mbbill/undotree'                 " visual history of undo log
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
@@ -105,4 +109,19 @@ set ignorecase
 set smartcase
 
 
+" key maps
+
+
+
+" Plugin specific configurations
+
+" airline
+let g:airline#extensions#tabline#enabled = 1
+let g:airline#extensions#tabline#show_buffers = 1
+let g:airline#extensions#tabline#buffer_nr_show = 1
+let g:airline#extensions#tabline#tab_nr_type = 1 " tab number
+" let g:airline#extensions#tabline#show_close_button = 0
+let g:airline#extensions#tabline#fnamemod = ':t'
+
+" 
 
