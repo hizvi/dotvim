@@ -111,6 +111,29 @@ set smartcase
 
 " key maps
 
+" change <leader> key from '\' to ','
+let mapleader=","
+
+" quick window split with ,s[vh] (vertical, horizontal)
+nnoremap <leader>sv <C-w>v<C-w>l
+nnoremap <leader>sh <C-w>s<C-w>j
+
+" move around splits faster
+nnoremap <C-h> <C-w>h
+nnoremap <C-j> <C-w>j
+nnoremap <C-k> <C-w>k
+nnoremap <C-l> <C-w>l
+
+" move around tabs faster
+nnoremap <leader>tn :tabnext<CR>
+nnoremap <leader>tp :tabprev<CR>
+nnoremap <leader>to :tabnew<CR>
+nnoremap <leader>tc :tabclose<CR>
+nnoremap <leader>t1 :tabn 1<CR>
+nnoremap <leader>t2 :tabn 2<CR>
+nnoremap <leader>t3 :tabn 3<CR>
+nnoremap <leader>t4 :tabn 4<CR>
+            
 
 
 " Plugin specific configurations
@@ -125,3 +148,6 @@ let g:airline#extensions#tabline#fnamemod = ':t'
 
 " 
 
+" >>>>>>> NERDTree <<<<<<<<
+nnoremap <leader>d :NERDTreeToggle<CR>
+" !>>>>>> NERDTree <<<<<<<!
